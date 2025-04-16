@@ -240,7 +240,7 @@ function sendOrder() {
         return;
     }
     
-    let message = 'Hello Echewise Global,\n\nI am interested in the following equipment:\n\n';
+    let message = 'Hello Jonalink Industrial Food Equipment ,\n\nI am interested in the following equipment:\n\n';
     
     cart.forEach(item => {
         message += `- ${item.name} (${item.category})\n`;
@@ -249,7 +249,7 @@ function sendOrder() {
     message += '\nPlease contact me with more information.\n\n';
     message += 'My contact details:\nName: \nPhone: \nDelivery Address: ';
     
-    window.open(`https://wa.me/2348164015614?text=${encodeURIComponent(message)}`, '_blank');
+    window.open(`https://wa.me/2348061958708?text=${encodeURIComponent(message)}`, '_blank');
 }
 
 // Make displayCartItems available globally
