@@ -6,6 +6,55 @@
     <title>Hytex Kitchen & Bakery World</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* WhatsApp green button style */
+        .buy-button {
+            background-color: #25D366;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            width: 100%;
+            margin-top: 10px;
+            transition: background-color 0.3s;
+        }
+        
+        .buy-button:hover {
+            background-color: #128C7E;
+        }
+        
+        /* Larger social media icons with labels */
+        .social-links a {
+            display: inline-flex;
+            align-items: center;
+            margin-right: 15px;
+            color: #333;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        
+        .social-links i {
+            font-size: 24px;
+            margin-right: 8px;
+            color: #25D366; /* WhatsApp green */
+        }
+        
+        .social-links .fa-facebook {
+            color: #3b5998; /* Facebook blue */
+        }
+        
+        .social-links .fa-instagram {
+            color: #E1306C; /* Instagram pink */
+        }
+        
+        /* Hide cart link */
+        #cart-link {
+            display: none;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -19,7 +68,6 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="index.html#about">About Us</a></li>
                     <li><a href="index.html#categories">Categories</a></li>
-                    <li><a href="cart.html" id="cart-link">Cart (<span id="cart-count">0</span>)</a></li>
                 </ul>
             </nav>
         </div>
@@ -34,11 +82,14 @@
             </button>
         </div>
         <div class="products-grid">
+            <!-- All product cards updated with WhatsApp BUY NOW buttons -->
             <div class="product-card" data-id="ff1">
                 <img src="images/snack-warmer.jpg" alt="Commercial Burger Machine">
                 <div class="product-info">
                     <h3>Flour cake display</h3>
-                    <button class="add-to-cart">Add to Cart</button>
+                    <button class="buy-button" onclick="window.open('https://wa.me/2348147669824?text=I%20want%20to%20buy%20Flour%20cake%20display', '_blank')">
+                        <i class="fab fa-whatsapp"></i> BUY NOW
+                    </button>
                 </div>
             </div>
             
@@ -46,7 +97,9 @@
                 <img src="images/4burner.jpg" alt="4 Burner Gas cooker with oven">
                 <div class="product-info">
                     <h3>4 Burner Gas cooker with oven</h3>
-                    <button class="add-to-cart">Add to Cart</button>
+                    <button class="buy-button" onclick="window.open('https://wa.me/2348147669824?text=I%20want%20to%20buy%204%20Burner%20Gas%20cooker%20with%20oven', '_blank')">
+                        <i class="fab fa-whatsapp"></i> BUY NOW
+                    </button>
                 </div>
             </div>
             
@@ -54,7 +107,9 @@
                 <img src="images/candyfloss.jpg" alt="Candy floss machine with cart">
                 <div class="product-info">
                     <h3>Candy floss machine with cart</h3>
-                    <button class="add-to-cart">Add to Cart</button>
+                    <button class="buy-button" onclick="window.open('https://wa.me/2348147669824?text=I%20want%20to%20buy%20Candy%20floss%20machine%20with%20cart', '_blank')">
+                        <i class="fab fa-whatsapp"></i> BUY NOW
+                    </button>
                 </div>
             </div>
             
@@ -62,7 +117,9 @@
                 <img src="images/popcornmachine.jpg" alt="Popcorn machine with cart">
                 <div class="product-info">
                     <h3>Popcorn machine with cart</h3>
-                    <button class="add-to-cart">Add to Cart</button>
+                    <button class="buy-button" onclick="window.open('https://wa.me/2348147669824?text=I%20want%20to%20buy%20Popcorn%20machine%20with%20cart', '_blank')">
+                        <i class="fab fa-whatsapp"></i> BUY NOW
+                    </button>
                 </div>
             </div>
             
@@ -70,7 +127,9 @@
                 <img src="images/doublebasket.jpeg" alt="Double Basket Gas fryer">
                 <div class="product-info">
                     <h3>Double Basket Gas fryer</h3>
-                    <button class="add-to-cart">Add to Cart</button>
+                    <button class="buy-button" onclick="window.open('https://wa.me/2348147669824?text=I%20want%20to%20buy%20Double%20Basket%20Gas%20fryer', '_blank')">
+                        <i class="fab fa-whatsapp"></i> BUY NOW
+                    </button>
                 </div>
             </div>
             
@@ -78,7 +137,9 @@
                 <img src="images/gasburner2.jpg" alt="Gas Burner">
                 <div class="product-info">
                     <h3>Gas Burner</h3>
-                    <button class="add-to-cart">Add to Cart</button>
+                    <button class="buy-button" onclick="window.open('https://wa.me/2348147669824?text=I%20want%20to%20buy%20Gas%20Burner', '_blank')">
+                        <i class="fab fa-whatsapp"></i> BUY NOW
+                    </button>
                 </div>
             </div>
 
@@ -86,7 +147,9 @@
                 <img src="images/commercial-fryer.jpg" alt="Commercial Deep Fryer">
                 <div class="product-info">
                     <h3>Commercial Deep Fryer</h3>
-                    <button class="add-to-cart">Add to Cart</button>
+                    <button class="buy-button" onclick="window.open('https://wa.me/2348147669824?text=I%20want%20to%20buy%20Commercial%20Deep%20Fryer', '_blank')">
+                        <i class="fab fa-whatsapp"></i> BUY NOW
+                    </button>
                 </div>
             </div>
             
@@ -94,7 +157,9 @@
                 <img src="images/burger-press.jpg" alt="Commercial Burger Press Machine">
                 <div class="product-info">
                     <h3>Commercial Burger Press</h3>
-                    <button class="add-to-cart">Add to Cart</button>
+                    <button class="buy-button" onclick="window.open('https://wa.me/2348147669824?text=I%20want%20to%20buy%20Commercial%20Burger%20Press', '_blank')">
+                        <i class="fab fa-whatsapp"></i> BUY NOW
+                    </button>
                 </div>
             </div>
             
@@ -102,7 +167,9 @@
                 <img src="images/hot-dog-roller.webp" alt="Hot Dog Roller Grill">
                 <div class="product-info">
                     <h3>Hot Dog Roller Grill</h3>
-                    <button class="add-to-cart">Add to Cart</button>
+                    <button class="buy-button" onclick="window.open('https://wa.me/2348147669824?text=I%20want%20to%20buy%20Hot%20Dog%20Roller%20Grill', '_blank')">
+                        <i class="fab fa-whatsapp"></i> BUY NOW
+                    </button>
                 </div>
             </div>
             
@@ -110,16 +177,19 @@
                 <img src="images/commercial-blender.jpg" alt="Commercial Blender">
                 <div class="product-info">
                     <h3>Commercial Blender</h3>
-                    <button class="add-to-cart">Add to Cart</button>
+                    <button class="buy-button" onclick="window.open('https://wa.me/2348147669824?text=I%20want%20to%20buy%20Commercial%20Blender', '_blank')">
+                        <i class="fab fa-whatsapp"></i> BUY NOW
+                    </button>
                 </div>
             </div>
-            
             
             <div class="product-card" data-id="ff10">
                 <img src="images/soda-dispenser.jpg.crdownload.jpg.crdownload" alt="Commercial Soda Dispenser">
                 <div class="product-info">
                     <h3>Commercial Soda Dispenser</h3>
-                    <button class="add-to-cart">Add to Cart</button>
+                    <button class="buy-button" onclick="window.open('https://wa.me/2348147669824?text=I%20want%20to%20buy%20Commercial%20Soda%20Dispenser', '_blank')">
+                        <i class="fab fa-whatsapp"></i> BUY NOW
+                    </button>
                 </div>
             </div>
             
@@ -127,7 +197,9 @@
                 <img src="images/slush-machine.avif" alt="Commercial Slush Machine">
                 <div class="product-info">
                     <h3>Commercial Slush Machine</h3>
-                    <button class="add-to-cart">Add to Cart</button>
+                    <button class="buy-button" onclick="window.open('https://wa.me/2348147669824?text=I%20want%20to%20buy%20Commercial%20Slush%20Machine', '_blank')">
+                        <i class="fab fa-whatsapp"></i> BUY NOW
+                    </button>
                 </div>
             </div>
             
@@ -135,7 +207,9 @@
                 <img src="images/pizza-oven.jpg" alt="Commercial Pizza Oven">
                 <div class="product-info">
                     <h3>Commercial Pizza Oven</h3>
-                    <button class="add-to-cart">Add to Cart</button>
+                    <button class="buy-button" onclick="window.open('https://wa.me/2348147669824?text=I%20want%20to%20buy%20Commercial%20Pizza%20Oven', '_blank')">
+                        <i class="fab fa-whatsapp"></i> BUY NOW
+                    </button>
                 </div>
             </div>
             
@@ -143,7 +217,9 @@
                 <img src="images/panini-press.jpg" alt="Commercial Panini Press">
                 <div class="product-info">
                     <h3>Commercial Panini Press</h3>
-                    <button class="add-to-cart">Add to Cart</button>
+                    <button class="buy-button" onclick="window.open('https://wa.me/2348147669824?text=I%20want%20to%20buy%20Commercial%20Panini%20Press', '_blank')">
+                        <i class="fab fa-whatsapp"></i> BUY NOW
+                    </button>
                 </div>
             </div>
             
@@ -151,11 +227,11 @@
                 <img src="images/crepe-maker.jpg" alt="Commercial Crepe Maker">
                 <div class="product-info">
                     <h3>Commercial Crepe Maker</h3>
-                    <button class="add-to-cart">Add to Cart</button>
+                    <button class="buy-button" onclick="window.open('https://wa.me/2348147669824?text=I%20want%20to%20buy%20Commercial%20Crepe%20Maker', '_blank')">
+                        <i class="fab fa-whatsapp"></i> BUY NOW
+                    </button>
                 </div>
             </div>
-
-
         </div>
     </main>
 
@@ -172,15 +248,20 @@
                         <li><a href="index.html">Home</a></li>
                         <li><a href="index.html#about">About Us</a></li>
                         <li><a href="index.html#categories">Categories</a></li>
-                        <li><a href="cart.html">Cart</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
                     <h3>Connect With Us</h3>
                     <div class="social-links">
-                        <a href="https://https://web.facebook.com/profile.php?id=61564661053809" target="_blank"><i class="fab fa-facebook"></i></a>
-                        <a href="https://instagram.com/hytex_kitchen_and_bakery_world" target="_blank"><i class="fab fa-instagram"></i></a>
-                        <a href="https://wa.me/2348147669824" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://web.facebook.com/profile.php?id=61564661053809" target="_blank">
+                            <i class="fab fa-facebook"></i> Hytex Facebook
+                        </a>
+                        <a href="https://instagram.com/hytex_kitchen_and_bakery_world" target="_blank">
+                            <i class="fab fa-instagram"></i> Hytex Instagram
+                        </a>
+                        <a href="https://wa.me/2348147669824" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Hytex WhatsApp
+                        </a>
                     </div>
                     <p>Email: hytexkitchenequip@gmail.com</p>
                     <p>Phone: +2348147669824</p>
@@ -193,7 +274,23 @@
         </div>
     </footer>
 
-
-    <script src="script.js"></script>
+    <script>
+        // Remove any cart functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            // Convert any remaining add-to-cart buttons to buy buttons
+            document.querySelectorAll('.add-to-cart').forEach(button => {
+                button.className = 'buy-button';
+                button.innerHTML = '<i class="fab fa-whatsapp"></i> BUY NOW';
+                const productName = button.closest('.product-info').querySelector('h3').textContent;
+                button.onclick = function() {
+                    window.open(`https://wa.me/2348147669824?text=I%20want%20to%20buy%20${encodeURIComponent(productName)}`, '_blank');
+                };
+            });
+            
+            // Remove cart count display
+            const cartLink = document.getElementById('cart-link');
+            if (cartLink) cartLink.style.display = 'none';
+        });
+    </script>
 </body>
 </html>
