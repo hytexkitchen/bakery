@@ -163,6 +163,8 @@ function removeFromCart(index) {
     }
 }
 
+
+
 // Enhanced Search functionality
 function setupSearch() {
     const searchBar = document.querySelector('.search-bar');
@@ -214,13 +216,26 @@ function performSearch() {
     }
 }
 
-// Pause slideshow on hover (optional)
-document.querySelector('.hero').addEventListener('mouseenter', function() {
-    document.querySelector('.hero-slideshow').style.animationPlayState = 'paused';
-});
-
-document.querySelector('.hero').addEventListener('mouseleave', function() {
-    document.querySelector('.hero-slideshow').style.animationPlayState = 'running';
+document.addEventListener('DOMContentLoaded', function() {
+    const slides = document.querySelectorAll('.hero-slide');
+    let currentSlide = 0;
+    
+    function nextSlide() {
+        // Remove active class from current slide
+        slides[currentSlide].classList.remove('active');
+        
+        // Move to next slide
+        currentSlide = (currentSlide + 1) % slides.length;
+        
+        // Add active class to new slide
+        slides[currentSlide].classList.add('active');
+    }
+    
+    // Start slideshow (change every 2 seconds)
+    setInterval(nextSlide, 2000);
+    
+    // Initialize first slide
+    slides[0].classList.add('active');
 });
 
 // Send order via WhatsApp
@@ -240,7 +255,7 @@ function sendOrder() {
         return;
     }
     
-    let message = 'Hello Jonalink Industrial Food Equipment ,\n\nI am interested in the following equipment:\n\n';
+    let message = 'Hello Hytex Kitchen & Bakery World ,\n\nI am interested in the following equipment:\n\n';
     
     cart.forEach(item => {
         message += `- ${item.name} (${item.category})\n`;
@@ -249,7 +264,7 @@ function sendOrder() {
     message += '\nPlease contact me with more information.\n\n';
     message += 'My contact details:\nName: \nPhone: \nDelivery Address: ';
     
-    window.open(`https://wa.me/2348061958708?text=${encodeURIComponent(message)}`, '_blank');
+    window.open(`https://wa.me/2348147669824?text=${encodeURIComponent(message)}`, '_blank');
 }
 
 // Make displayCartItems available globally
